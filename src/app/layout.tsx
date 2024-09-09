@@ -6,6 +6,7 @@ import { getLocale } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import React from 'react';
 import '@/styles/main.css';
+import { NabSocial } from '@/components/home/NabSocial';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,7 +25,11 @@ export default async function RootLayout({
       <body className={clsx(inter.className)}>
         <Provider>
           <Header />
-          <main>{children}</main>
+          <div className={clsx('flex')}>
+            <NabSocial />
+            <main>{children}</main>
+          </div>
+
           {/*<Footer />*/}
         </Provider>
       </body>

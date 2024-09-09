@@ -47,9 +47,9 @@ const HeroSection = () => {
             <div className={clsx('mt-6 md:mt-8')}>
               <HeaderCta />
             </div>
-            <div className={clsx('mt-6 md:mt-8')}>
+            {/* <div className={clsx('mt-6 md:mt-8')}>
               <Socials />
-            </div>
+            </div> */}
           </div>
           <div
             className={clsx(

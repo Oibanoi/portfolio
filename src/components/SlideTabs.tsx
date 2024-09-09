@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const SlideTabsExample = () => {
   return (
-    <div className="bg-neutral-100  rounded-full">
+    <div className=" bg-gray-800 dark:bg-gray-50  rounded-full">
       <SlideTabs />
     </div>
   );
@@ -26,7 +26,7 @@ const SlideTabs = () => {
           opacity: 0,
         }));
       }}
-      className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1"
+      className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-gray-800 dark:bg-gray-50 p-1"
     >
       <Tab setPosition={setPosition}>
         <Link href="/">{t('home')}</Link>
@@ -82,7 +82,7 @@ const Cursor = ({ position }: { position: any }) => {
       animate={{
         ...position,
       }}
-      className="absolute z-0 h-7 rounded-full bg-black md:h-12"
+      className="absolute z-0 h-7 rounded-full dark:bg-gray-800 bg-white md:h-12"
     />
   );
 };
